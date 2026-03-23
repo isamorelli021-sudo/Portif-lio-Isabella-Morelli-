@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isabella Morelli | Portfólio</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Isabella<span>DEV.</span></div>
+        <div class="nav-links">
+            <button class="tab-btn active" onclick="openTab(event, 'home')">Home</button>
+            <button class="tab-btn" onclick="openTab(event, 'formacao')">Formação</button>
+            <button class="tab-btn" onclick="openTab(event, 'skills')">Skills</button>
+            <button class="tab-btn" onclick="openTab(event, 'projetos')">Projetos</button>
+            <button class="tab-btn" onclick="openTab(event, 'sobre')">Sobre & Contato</button>
+        </div>
+    </nav>
+
+    <div id="home" class="tab-content active">
+        <header>
+            <div class="header-container">
+                <div class="text-info">
+                    <p> Isabella Morelli</p>
+                    <h1>ESTAGIÁRIA DE <span>SUPORTE</span></h1>
+                    <p class="desc">Estudante de Produção Gráfica na Theobaldo de Nigris e estagiária na Ecalc Software. Focada em soluções técnicas.</p>
+                    <div class="btns">
+                        <a href="javascript:void(0)" onclick="openTab(event, 'sobre')" class="btn-primary">Vamos conversar</a>
+                        <a href="https://linkedin.com/in/isamorelli"target="_blank" class="btn-secondary">LinkedIn</a>
+                    </div>
+                </div>
+                <div class="foto-frame">
+                    <img src="minha-foto.jpg" alt="Isabella Morelli">
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <div id="formacao" class="tab-content">
+        <section>
+            <h2>Minha Jornada<span>.</span></h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="ano">2026</span>
+                    <h3>Graduação em Produção Gráfica</h3>
+                    <p>SENAI Theobaldo De Nigris - Em andamento</p>
+                </div>
+                <div class="timeline-item">
+                    <span class="ano">2025</span>
+                    <h3>Técnico em Processos Gráficos</h3>
+                    <p>SENAI Theobaldo De Nigris - Concluído</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="skills" class="tab-content">
+        <section>
+            <h2>Skills & Conhecimentos<span>.</span></h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Suporte & Tech</h3>
+                    <ul>
+                        <li>Suporte Técnico (Ecalc)</li>
+                        <li>Lógica de Programação</li>
+                        <li>HTML, CSS e JavaScript</li>
+                        <li>IA Aplicada</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Processos Gráficos</h3>
+                    <ul>
+                        <li>Impressão Offset</li>
+                        <li>Análise de Processos</li>
+                        <li>Identidade Visual</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Certificações</h3>
+                    <ul>
+                        <li>Microsoft: AI-900 | AI-102 | AZ-900 | SC-900</li>
+                        <li>Google Cloud IA</li>
+                        <li>Microsoft Power BI</li>
+                        <li>LGPD Privacidade e Proteção de Dados</li>
+
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Soft Skills</h3>
+                    <ul>
+                        <li>Trabalho em Equipe</li>
+                        <li>Organização</li>
+                        <li>Proatividade</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="projetos" class="tab-content">
+        <section>
+            <h2>Projetos em Destaque<span>.</span></h2>
+
+            <div class="projeto-container">
+                <div class="projeto-card">
+                    <img src="print-pilot.png" alt="Website interativo">
+                    <h3>Website Interativo com Chatbot para Otimização da Impressão Offset</h3>
+                    <p>Desenvolvimento de solução digital para reduzir falhas e desperdícios no processo de impressão offset. Criação de website interativo e chatbot com lógica automatizada utilizando HTML, CSS e JavaScript, permitindo diagnóstico rápido e suporte ao operador e contribuindo para redução de tempo de parada e desperdícios.</p>
+                
+                </div>
+                <div class="projeto-container">
+                <div class="projeto-card">
+                    <img src="portifolio.png" alt="Este Portfólio">
+                    <h3>Portifólio</h3>
+                    <p> Desenvolvimento de um portifólio em HTML e CSS.
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="sobre" class="tab-content">
+        <section>
+            <div class="sobre-container">
+                <div class="sobre-texto">
+                    <h2>Sobre Mim<span>.</span></h2>
+                    <p>Atualmente sou estagiáriade suporte técnico na Eclac Software e estudante de produção gráfica na Instituição Theobaldo de Nigris. Tenho 18 anos e estou unindo meus conhecimentos em tecnologia e produção gráfica.
+                </div>
+                <div class="contato-box">
+                    <h2>Contato<span>.</span></h2>
+                    <a href="mailto:isamorelli021@hotmail.com"><i class="fas fa-envelope"></i> isamorelli021@hotmail.com</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) { tabcontent[i].style.display = "none"; }
+            tablinks = document.getElementsByClassName("tab-btn");
+            for (i = 0; i < tablinks.length; i++) { tablinks[i].className = tablinks[i].className.replace(" active", ""); }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>
